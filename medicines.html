@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medicines</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="checkAuth(); loadMedicines();">
+
+<nav class="navbar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="medicines.html" class="active">Medicines</a>
+  <a href="family.html">Family</a>
+  <a href="settings.html">Settings</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h3>Add Medicine</h3>
+    <input id="medName" placeholder="Medicine name">
+    <input id="medTime" placeholder="Time (9:00 AM)">
+    <button onclick="addMedicine()">Add</button>
+  </div>
+
+  <div id="medicineList"></div>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/medicines.js"></script>
+</body>
+</html>

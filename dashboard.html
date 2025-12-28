@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="checkAuth()">
+
+<nav class="navbar">
+  <a href="dashboard.html" class="active">Dashboard</a>
+  <a href="medicines.html">Medicines</a>
+  <a href="family.html">Family</a>
+  <a href="settings.html">Settings</a>
+</nav>
+
+<div class="container">
+  <h2>Good Morning, Ravi</h2>
+  <p class="subtitle">Today's overview</p>
+
+  <div class="card">
+    <h3>Status</h3>
+    <p>🟢 Active • 😊 Calm</p>
+  </div>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

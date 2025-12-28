@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Family Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="checkAuth(); loadFamily();">
+
+<nav class="navbar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="medicines.html">Medicines</a>
+  <a href="family.html" class="active">Family</a>
+  <a href="settings.html">Settings</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>🟢 Ravi is doing well</h2>
+    <p class="subtitle">Medication summary</p>
+    <ul id="familyMeds"></ul>
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/family.js"></script>
+</body>
+</html>
