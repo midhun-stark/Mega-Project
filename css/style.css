@@ -103,3 +103,36 @@ input {
   color: #999;
   font-size: 14px;
 }
+/* TEXT SIZE */
+.text-small {
+  font-size: 14px;
+}
+
+.text-medium {
+  font-size: 16px;
+}
+
+.text-large {
+  font-size: 18px;
+}
+
+/* OPTION ROW */
+.option-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option-row button {
+  flex: 1;
+}
+
+/* WARM THEME */
+.theme-warm {
+  background: #EFE3D6;
+}
+
+/* DANGER BUTTON */
+button.danger {
+  background: #D96A6A;
+}
