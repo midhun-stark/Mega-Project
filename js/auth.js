@@ -11,18 +11,18 @@ function login(role) {
 
 function checkAuth() {
   if (!localStorage.getItem("loggedIn")) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
 function checkRole(requiredRole) {
   const role = localStorage.getItem("role");
   if (role !== requiredRole) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
 function logout() {
   localStorage.clear();
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
