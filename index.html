@@ -11,14 +11,16 @@
     <h1>Sentimate</h1>
     <p class="subtitle">Welcome back</p>
 
-    <!-- NO FORM -->
     <input id="username" type="text" placeholder="Username">
     <input id="password" type="password" placeholder="Password">
 
-    <button id="loginBtn">Login</button>
+    <p style="margin-top:10px;">Login as:</p>
+    <div class="option-row">
+      <button onclick="login('elder')">👴 Elder</button>
+      <button onclick="login('family')">👨‍👩‍👧 Family</button>
+    </div>
   </div>
 
-  <!-- SCRIPT MUST BE AT BOTTOM -->
   <script src="js/auth.js"></script>
 </body>
 </html>

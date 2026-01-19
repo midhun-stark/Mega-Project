@@ -4,14 +4,14 @@
   <title>Family Dashboard</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="checkAuth(); loadFamily();">
+<body onload="checkAuth(); checkRole('family'); loadSettings(); loadFamily();">
+
 
 <nav class="navbar">
-  <a href="dashboard.html">Dashboard</a>
-  <a href="medicines.html">Medicines</a>
   <a href="family.html" class="active">Family</a>
   <a href="settings.html">Settings</a>
 </nav>
+
 
 <div class="container">
   <div class="card">
