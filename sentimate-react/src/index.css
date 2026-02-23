@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Core Colors - Emotion Identity */
+  --color-joyful: #FFD700;    /* Yellow / Gold */
+  --color-joyful-bg: #FFF8E1; 
+  
+  --color-content: #90EE90;   /* Soft Green */
+  --color-content-bg: #F1F8E9;
+  
+  --color-neutral: #87CEEB;   /* Calm Blue */
+  --color-neutral-bg: #E3F2FD;
+  
+  --color-sad: #7986CB;       /* Muted Indigo */
+  --color-sad-bg: #E8EAF6;
+  
+  --color-angry: #E57373;     /* Soft Red */
+  --color-angry-bg: #FFEBEE;
+  
+  --color-anxious: #4DB6AC;   /* Teal / Cyan */
+  --color-anxious-bg: #E0F2F1;
+  
+  --color-lonely: #BA68C8;    /* Lavender / Purple */
+  --color-lonely-bg: #F3E5F5;
+  
+  --color-calm: #A5D6A7;      /* Mint / Pastel Green */
+  --color-calm-bg: #E8F5E9;
+  
+  --color-hopeful: #FFB74D;   /* Peach / Sunrise Orange */
+  --color-hopeful-bg: #FFF3E0;
+  
+  --color-overwhelmed: #90A4AE; /* Grey-Blue */
+  --color-overwhelmed-bg: #ECEFF1;
+
+  /* Base Typography & Token */
+  --font-family-base: 'Outfit', sans-serif;
+  
+  /* UX Principles */
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 8px;
+  
+  --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+  --shadow-card: 0 4px 12px rgba(0,0,0,0.05);
+  
+  font-family: var(--font-family-base);
+  line-height: 1.6;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Default Transition */
+  --transition-mood: background-color 1.5s ease, color 1.5s ease, border-color 0.5s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-neutral-bg); /* Default start */
+  color: #37474F; /* Dark Grey for readability */
+  transition: var(--transition-mood);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-base);
+  margin: 0;
+  color: inherit;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.125rem; /* Larger text for elderly */
+}
+
+button {
+  font-family: var(--font-family-base);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Scrollbar styling for elderly ease */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.15);
+  border-radius: 20px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+/* Utility to ensure full height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

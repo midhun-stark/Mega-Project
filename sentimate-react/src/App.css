@@ -1,0 +1,14 @@
+/* Clean start */
+.app-container {
+  max-width: 600px;
+  /* Mobile-first optimization as requested for elderly easier handling? Or just central focus */
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  /* background is handled by body transition in context */
+}
+
+/* Ensure padding for fixed navbar */
+main {
+  padding-bottom: 100px;
+}
